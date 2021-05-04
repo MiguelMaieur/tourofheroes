@@ -1,1 +1,9 @@
-<h2>{{hero}}</h2>
+<h2>My Heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let x of heroes" >
+    <a routerLink="/detail/{{x.id}}">
+      <span class="badge">{{x.id}}</span> {{x.name}}
+    </a>
+  </li>
+</ul>
+
