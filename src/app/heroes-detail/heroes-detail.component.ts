@@ -32,4 +32,7 @@ export class HeroesDetailComponent implements OnInit {
   // hero():Hero{
   //   return _hero;
   // }
+  save():void {
+    this.service.updateHero(this.hero).subscribe(() => this.goBack());
+  }
 }
